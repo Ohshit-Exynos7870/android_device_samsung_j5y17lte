@@ -1,6 +1,3 @@
-The Samsung A3 2017 (codenamed _"a3y17lte"_) are a mid-range smartphone from Samsung.
-
-It was announced and released in January 2017.
 
 ## Device specifications
 
