@@ -1,26 +1,24 @@
-# TWRP for the Samsung Galaxy J5 2017
+The Samsung J5 2017 (codenamed _"j5y17lte"_) are a mid-range smartphone from Samsung. It was announced and released in June 2017.
 
-### How to build ###
+## Device specifications
 
-```bash
-# Create dirs
-$ mkdir twrp ; cd twrp
+| Device       | Samsung Galaxy J5 2017                             |
+| -----------: | :----------------------------------------------    |
+| SoC          | Samsung Exynos 7870                                |
+| CPU          | Octa-core, 1586 MHz, ARM Cortex-A53, 64-bit, 14 nm |
+| GPU          | Mali-T830                                          |
+| Memory       | 2GB (LPDDR3X)                                      |
+| Shipped Android version | 7.0                                     |
+| Storage      | 16GB eMMC 5.1 flash storage                        |
+| Battery      | Non-removable Li-Po 3000 mAh                       |
+| Dimensions   | 146.2 x 71.3 x 8.0 mm                              |
+| Display      | 1280 x 720  (16:9), 5.2  inch                      |
+| Rear camera 1 | 13MP, f/1.7                                       |
+| Front camera  | 13P                                               |
 
-# Init repo
-$ repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
+## Device picture
 
-# Clone my local repo
-$ git clone https://gitlab.com/android_samsung_universal7870/manifest/android_manifest_samsung_j5y17lte.git -b twrp .repo/local_manifests
+![Samsung J5 2017](https://www.maxmovil.com/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/s/a/samsung_galaxy_j7_2017_negro_libre_1.jpg)
 
-# Sync
-$ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
 
-# Build
-$ mv device/samsung/j5y17lte/build_twrp.sh .
-$ . build_twrp.sh j5y17lte
-```
-## Credits
-2020 @Astrako
 
-## Contact
-Telegram support group: https://t.me/joinchat/D1Jk_VbieGBXOWZt2y8O7A

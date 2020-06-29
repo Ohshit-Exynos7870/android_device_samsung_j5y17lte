@@ -12,12 +12,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),j5y17lte)
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := libbauthtzcommon.c
+LOCAL_SHARED_LIBRARIES := liblog libui libutils
+LOCAL_MODULE := libbauthtzcommon_shim
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_VENDOR_MODULE := true
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+include $(BUILD_SHARED_LIBRARY)
